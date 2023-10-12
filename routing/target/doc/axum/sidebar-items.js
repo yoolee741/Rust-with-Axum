@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["body","error_handling","extract","handler","middleware","response","routing"],"struct":["Error","Extension","Form","Json","Router"],"trait":["RequestExt","RequestPartsExt","ServiceExt"],"type":["BoxError"]};
+window.SIDEBAR_ITEMS = {"mod":["body","error_handling","extract","handler","middleware","response","routing"],"struct":["Error","Extension","Form","Json","Router","TypedHeader"],"trait":["RequestExt","RequestPartsExt","ServiceExt"],"type":["BoxError"]};
