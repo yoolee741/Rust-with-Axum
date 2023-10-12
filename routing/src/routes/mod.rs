@@ -8,7 +8,7 @@ mod mirror_custom_header;
 mod middleware_message;
 mod read_middleware_custom_header;
 mod set_middleware_custom_header;
-
+mod always_errors;
 
 use axum::{Router, routing::{post, get}, http::Method, Extension, middleware};
 use hello_world::hello_world;
@@ -22,6 +22,7 @@ use tower_http::cors::{CorsLayer, Any};
 use self::middleware_message::middleware_message;
 use read_middleware_custom_header::read_middleware_custom_header;
 use set_middleware_custom_header::set_middleware_custom_header;
+use always_errors::always_errors;
 
 // In order to pass the sharedData to each of the handlers, implementing clone is essential! 
 #[derive(Clone)]
@@ -50,6 +51,7 @@ pub fn create_routes() -> Router{
     .route("/middleware_message", get(middleware_message))
     .layer(cors)
     .layer(Extension(shared_data))
+    .route("/always_errors", get(always_errors))
     
 
 }
