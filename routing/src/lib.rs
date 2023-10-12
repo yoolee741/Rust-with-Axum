@@ -2,7 +2,6 @@ mod routes;
 
 use routes::create_routes;
 
-
 pub async fn run() {
      // || means closure
      let app = create_routes(); 
