@@ -6,8 +6,11 @@ mod query_params;
 mod mirror_user_agent;
 mod mirror_custom_header;
 mod middleware_message;
+mod read_middleware_custom_header;
+mod set_middleware_custom_header;
 
-use axum::{Router, routing::{post, get}, http::Method, Extension};
+
+use axum::{Router, routing::{post, get}, http::Method, Extension, middleware};
 use hello_world::hello_world;
 use mirror_body_string::mirror_body_string;
 use mirror_body_json::mirror_body_json;
@@ -17,6 +20,8 @@ use mirror_user_agent::mirror_user_agent;
 use mirror_custom_header::mirror_custom_header;
 use tower_http::cors::{CorsLayer, Any};
 use self::middleware_message::middleware_message;
+use read_middleware_custom_header::read_middleware_custom_header;
+use set_middleware_custom_header::set_middleware_custom_header;
 
 // In order to pass the sharedData to each of the handlers, implementing clone is essential! 
 #[derive(Clone)]
@@ -31,7 +36,10 @@ pub fn create_routes() -> Router{
 
     let shared_data = SharedData {message: "Hello from shared data".to_owned()};
 
-    Router::new().route("/", post(hello_world))
+    Router::new()
+    .route("/read_middleware_custom_header", get(read_middleware_custom_header))
+    .route_layer(middleware::from_fn(set_middleware_custom_header))
+    .route("/", post(hello_world))
     .route("/mirror_body_string", post(mirror_body_string))
     .route("/mirror_body_json", post(mirror_body_json))
     .route("/path_variables/:id", get(path_variables))
@@ -42,6 +50,7 @@ pub fn create_routes() -> Router{
     .route("/middleware_message", get(middleware_message))
     .layer(cors)
     .layer(Extension(shared_data))
+    
 
 }
 
