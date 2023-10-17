@@ -1,0 +1,12 @@
+/Users/yoorimlee/Desktop/Rust-with-Axum/data/target/debug/deps/crc-8ea6b032ea8f8c28.rmeta: /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/lib.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc128.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc16.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc32.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc64.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc8.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/table.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/util.rs
+
+/Users/yoorimlee/Desktop/Rust-with-Axum/data/target/debug/deps/crc-8ea6b032ea8f8c28.d: /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/lib.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc128.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc16.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc32.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc64.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc8.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/table.rs /Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/util.rs
+
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/lib.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc128.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc16.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc32.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc64.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/crc8.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/table.rs:
+/Users/yoorimlee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/crc-3.0.1/src/util.rs:
